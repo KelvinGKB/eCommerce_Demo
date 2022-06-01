@@ -1,0 +1,37 @@
+@import 'antd/lib/style/default.css';
+@import 'antd/lib/affix/style/index.css';
+@import 'antd/lib/avatar/style/index.css';
+@import 'antd/lib/badge/style/index.css';
+.navigation-bar{
+    @apply  flex items-center w-full bg-[#202020] h-16;
+    @apply justify-center lg:justify-start !important;
+}
+
+.logo{
+    font-family: "Avenir next";
+    @apply flex items-center h-full lg:ml-12;
+    @apply text-white text-2xl font-bold;
+}
+
+.navigation-link{
+    @apply ml-16;
+    @apply hidden lg:flex;
+}
+
+.navigation-link > a{
+    font-family: Helvetica Neue;
+    @apply pr-3 mr-9;
+    @apply text-white text-sm;
+}
+
+.navigation-link > a:hover{
+    @apply font-bold;
+}
+
+.navigation-link > a:visited, a:active{
+    @apply font-bold;
+}
+
+.profile-item{
+    @apply w-full justify-end mr-8 hidden lg:flex;
+}

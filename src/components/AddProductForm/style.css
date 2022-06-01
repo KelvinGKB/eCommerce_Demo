@@ -1,0 +1,164 @@
+@import 'antd/lib/style/default.css';
+@import 'antd/lib/form/style/index.css';
+@import 'antd/lib/grid/style/index.css';
+@import 'antd/lib/tooltip/style/index.css';
+@import 'antd/lib/style/default.css';
+@import 'antd/lib/input/style/index.css';
+@import 'antd/lib/radio/style/index.css';
+@import 'antd/lib/button/style/index.css';
+@import 'antd/lib/tag/style/index.css';
+@import 'antd/lib/checkbox/style/index.css';
+@import 'antd/lib/input-number/style/index.css';
+
+
+.title{
+    @apply block lg:hidden;
+    @apply w-full border-b-[1px] border-b-gray-300 px-5 py-3;
+    @apply font-bold;
+    font-family: Helvetica Neue;
+}
+
+.product-panel{
+    @apply px-5 lg:px-10 py-10;
+}
+
+.add-product-panel{
+    @apply sm:flex-col lg:flex-row;
+}
+
+.indicate-hint{
+    @apply flex justify-end lg:justify-start;
+}
+
+.brand-helper-text{
+    @apply flex items-center mt-4 mb-14
+}
+
+.declaration-text{
+    font-family: Helvetica Neue;
+    @apply flex ml-7;
+}
+
+/* Input Components */
+.ant-input, .ant-input-affix-wrapper{
+    @apply border-none shadow-none py-2 px-0;
+    border-bottom: 1px solid #202020;
+    @apply hover:border-none focus:border-none focus:shadow-none;
+}
+
+.ant-input:hover, .ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover{
+    border-bottom: 1px solid #202020;
+}
+.ant-input:focus, .ant-input-affix-wrapper:focus{
+    border-bottom: 1px solid #202020;
+}
+
+.ant-input-affix-wrapper-status-error:not(.ant-input-affix-wrapper-disabled):not(.ant-input-affix-wrapper-borderless).ant-input-affix-wrapper:focus{
+    @apply shadow-none;
+}
+
+/* Input Number Component */
+.ant-input-number {
+    @apply border-none shadow-none !important;
+    border-bottom: 1px solid #202020 !important;
+    @apply hover:border-none focus:border-none focus:shadow-none;
+}
+
+.ant-input-number-input-wrap > input{
+    @apply px-0;
+}
+
+.ant-input-number-handler:hover .ant-input-number-handler-up-inner, .ant-input-number-handler:hover .ant-input-number-handler-down-inner {
+    @apply text-[#202020];
+}
+
+
+/* Radio Button Component */
+.ant-radio-button-wrapper{
+    @apply mr-3 text-center;
+    @apply w-20 lg:w-auto;
+}
+
+.ant-radio-btn-category{ 
+    @apply w-auto;
+}
+
+.ant-radio-button-wrapper:not(.ant-radio-button-wrapper-disabled) {
+    font-family: Helvetica Neue;
+    @apply text-[#202020] shadow-none;
+    @apply hover:text-[#202020] active:text-[#202020];
+}
+
+.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+    @apply text-white border-transparent bg-[#202020] shadow-none;
+    @apply hover:text-white active:text-white active:border-transparent focus-within:shadow-none;
+}
+
+/* Button */
+.ant-btn-primary{
+    @apply bg-[#202020] text-white border-transparent !important;
+}
+
+.btn-primary-icon{
+    @apply flex items-center !important;
+}
+
+/* Action Button */
+.action-btn{
+    font-family: Helvetica Neue;
+    border: 1px solid #202020 !important;
+    @apply w-24;
+}
+.reset-btn{
+    @apply mr-4 w-24; 
+    @apply hover:text-[#202020] active:text-[#202020] !important;
+}
+
+/* Tag */
+.ant-tag{
+    @apply py-1.5 px-3 flex w-fit items-center;
+}
+
+.ant-tag-hidden{
+    @apply hidden !important;
+}
+
+.ant-tag > span{
+    @apply ml-5;
+}
+
+/* Checkbox Components */
+.ant-checkbox:hover > .ant-checkbox-inner {
+    @apply border-slate-700;
+}
+
+.ant-checkbox-wrapper {
+    @apply text-slate-700 font-normal;
+}
+
+.ant-checkbox-wrapper:hover .ant-checkbox-inner {
+    @apply border-slate-700;
+}
+
+.ant-checkbox-checked > .ant-checkbox-inner {
+    @apply bg-slate-700 border-slate-700;
+}
+
+.ant-checkbox-checked >.ant-checkbox-inner::after {
+    @apply box-border;
+}
+
+/* Form Component */
+.ant-form-item-label{
+    font-family: Helvetica Neue;
+    @apply text-sm font-bold; 
+}
+
+.ant-form-item.field-required > .ant-form-item-label > label:after {
+    @apply text-red-600 ml-1;
+    content:"****" !important;
+}
+
+.action-btn-group > .ant-form-item-control > .ant-form-item-control-input > .ant-form-item-control-input-content {
+    @apply flex  mt-2 lg:justify-end justify-center;
+}

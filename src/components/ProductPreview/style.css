@@ -1,0 +1,92 @@
+@import 'antd/lib/style/default.css';
+@import 'antd/lib/tabs/style/index.css';
+@import 'antd/lib/image/style/index.css';
+@import 'antd/lib/divider/style/index.css';
+@import 'antd/lib/carousel/style/index.css';
+
+.gallery-panel{
+    @apply px-5 lg:px-20 py-10;
+    border-right: 2px solid #f7f7f7;
+    @apply sm:border-r-transparent ;
+}
+
+.image-gallery-pane{
+    @apply flex justify-center;
+}
+.image-gallery{
+    border : 1px solid #202020;
+    min-height:400px;
+    @apply w-full bg-gray-50;
+    @apply flex justify-center items-center flex-wrap;
+}
+
+.preview-gallery{
+    border : 1px solid #202020;
+    min-height:400px;
+    @apply w-full bg-gray-50;
+    @apply max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-5xl;
+}
+
+.preview-icon{
+    border: 1px solid #202020;
+    @apply flex flex-col;
+    @apply h-24 w-24 text-center justify-center;
+    @apply lg:border-transparent border-[#202020]
+}
+
+/* Product Image */
+.image-item{
+    @apply mx-2 my-2;
+    width: 250px;
+}
+
+.ant-image-preview-img-wrapper{
+    @apply flex justify-center;
+}
+
+.add-image-preview{
+    @apply w-6 h-6 lg:w-8 lg:h-8 self-center
+}
+
+/* Upload Part */
+.upload-btn{
+    align-self: center;
+    width: fit-content;
+    margin-bottom: 12px;
+}
+
+.upload-hint{
+    font-family : Helvetica Neue;
+    @apply text-[#898989] text-xs;
+    @apply flex flex-col text-center pt-9;
+}
+
+
+/* Tabs Component */
+
+.ant-tabs-tab{
+    width:50%;
+    @apply text-[#898989];
+    @apply text-center justify-center;
+    @apply hover:text-[#202020];
+}
+
+.ant-tabs-tab-btn{
+    @apply active:text-[#202020];
+}
+
+.ant-tabs-tab-active{
+    border-bottom : 2px solid #202020;
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    @apply text-[#202020];
+}
+
+.ant-tabs-nav-list{
+    @apply w-full;
+}
+
+.ant-tabs-tab + .ant-tabs-tab {
+    @apply m-0;
+}
