@@ -63,7 +63,6 @@
 
 
 /* Tabs Component */
-
 .ant-tabs-tab{
     width:50%;
     @apply text-[#898989];
@@ -77,6 +76,10 @@
 
 .ant-tabs-tab-active{
     border-bottom : 2px solid #202020;
+}
+
+.ant-tabs-ink-bar {
+    @apply bg-[#202020];
 }
 
 .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
