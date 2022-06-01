@@ -69,7 +69,7 @@
 }
 
 .ant-input-number-handler:hover .ant-input-number-handler-up-inner, .ant-input-number-handler:hover .ant-input-number-handler-down-inner {
-    @apply text-[#202020];
+    @apply text-primary;
 }
 
 
@@ -85,18 +85,18 @@
 
 .ant-radio-button-wrapper:not(.ant-radio-button-wrapper-disabled) {
     font-family: Helvetica Neue;
-    @apply text-[#202020] shadow-none;
-    @apply hover:text-[#202020] active:text-[#202020];
+    @apply text-primary shadow-none;
+    @apply hover:text-primary active:text-primary;
 }
 
 .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
-    @apply text-white border-transparent bg-[#202020] shadow-none;
+    @apply text-white border-transparent bg-primary shadow-none;
     @apply hover:text-white active:text-white active:border-transparent focus-within:shadow-none;
 }
 
 /* Button */
 .ant-btn-primary{
-    @apply bg-[#202020] text-white border-transparent !important;
+    @apply bg-primary text-white border-transparent !important;
 }
 
 .btn-primary-icon{
@@ -111,7 +111,7 @@
 }
 .reset-btn{
     @apply mr-4 w-24; 
-    @apply hover:text-[#202020] active:text-[#202020] !important;
+    @apply hover:text-primary active:text-primary !important;
 }
 
 /* Tag */

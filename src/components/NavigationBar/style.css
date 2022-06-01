@@ -3,7 +3,7 @@
 @import 'antd/lib/avatar/style/index.css';
 @import 'antd/lib/badge/style/index.css';
 .navigation-bar{
-    @apply  flex items-center w-full bg-[#202020] h-16;
+    @apply  flex items-center w-full bg-primary h-16;
     @apply justify-center lg:justify-start !important;
 }
 
