@@ -35,7 +35,7 @@ const ProducPreview = (props : ProducPreviewProps ) =>{
     }
 
     const handleTab = (key:string) => {
-        console.log(key);
+        //console.log(key);
         setActiveTab(key);
     }
 
