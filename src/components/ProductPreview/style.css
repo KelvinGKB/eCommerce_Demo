@@ -86,6 +86,10 @@
     @apply text-primary;
 }
 
+.ant-tabs>.ant-tabs-nav .ant-tabs-nav-operations{
+    @apply hidden;
+}
+
 .ant-tabs-nav-list{
     @apply w-full;
 }
