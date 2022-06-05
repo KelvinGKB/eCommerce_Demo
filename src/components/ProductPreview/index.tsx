@@ -9,8 +9,9 @@ import { fileToDataUri } from "../../helpers/helper";
 const { TabPane } = Tabs;
 
 const ProducPreview = (props : ProducPreviewProps ) =>{
-    console.log(props.thumbnail);
+    //console.log(props.thumbnail);
 
+    const [activeTab,setActiveTab] = useState("1");
     const [images,setImages] = useState([] as string[]);
     const inputRef = useRef<HTMLInputElement>(null);
 
@@ -33,9 +34,13 @@ const ProducPreview = (props : ProducPreviewProps ) =>{
             })
     }
 
+    const handleTab = (key:string) => {
+        setActiveTab(key);
+    }
+
     return (
         <div className="gallery-panel">
-            <Tabs defaultActiveKey="1" centered>
+            <Tabs activeKey={activeTab} centered onTabClick={(key)=>handleTab(key)}>
 
                 <TabPane tab="Image Gallery" key="1" className="image-gallery-pane">
                     <div className="image-gallery" onClick={(props.thumbnail || images.length) ? ()=>{} : clickAddImage}>
