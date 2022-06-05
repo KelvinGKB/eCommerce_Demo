@@ -41,7 +41,7 @@ const ProducPreview = (props : ProducPreviewProps ) =>{
 
     return (
         <div className="gallery-panel">
-            <Tabs activeKey={activeTab} centered onTabClick={(key)=>handleTab(key)} moreIcon={null}>
+            <Tabs activeKey={activeTab} centered onTabClick={(key)=>handleTab(key)} tabBarExtraContent={null} moreIcon={null}>
 
                 <TabPane tab="Image Gallery" key="1" className="image-gallery-pane">
                     <div className="image-gallery" onClick={(props.thumbnail || images.length) ? ()=>{} : clickAddImage}>
